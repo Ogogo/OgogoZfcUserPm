@@ -1,16 +1,4 @@
-OgogoZfcUserPm
-=======
-[![Build Status](https://travis-ci.org/Ogogo/OgogoZfcUserPm.svg?branch=master)](https://travis-ci.org/Ogogo/OgogoZfcUserPm)
-[![Code Climate](https://codeclimate.com/github/Ogogo/OgogoZfcUserPm/badges/gpa.svg)](https://codeclimate.com/github/Ogogo/OgogoZfcUserPm)
-[![Test Coverage](https://codeclimate.com/github/Ogogo/OgogoZfcUserPm/badges/coverage.svg)](https://codeclimate.com/github/Ogogo/OgogoZfcUserPm)
-[![Latest Stable Version](https://poser.pugx.org/ogogo/ogogo-zfc-user-pm/v/stable.svg)](https://packagist.org/packages/ogogo/ogogo-zfc-user-pm)
-[![Latest Unstable Version](https://poser.pugx.org/ogogo/ogogo-zfc-user-pm/v/unstable.svg)](https://packagist.org/packages/ogogo/ogogo-zfc-user-pm)
-[![Total Downloads](https://poser.pugx.org/ogogo/ogogo-zfc-user-pm/downloads.svg)](https://packagist.org/packages/ogogo/ogogo-zfc-user-pm)
-[![License](https://poser.pugx.org/ogogo/ogogo-zfc-user-pm/license.svg)](https://packagist.org/packages/ogogo/ogogo-zfc-user-pm)
-
-Introduction
-------------
-OgogoZfcUserPm is a basic private message module which allows for sending of messages between users.   
+basic private messages
 
 By default this module works with Doctrine ORM(through the DoctrineORM mapper). 
 It's very easy to add your own mapper, ZendDb for example.   
@@ -70,9 +58,4 @@ Installation
         // ...
     );
     ```
-    
-Extensions
-------------
-- [OgogoZfcUserPmFolders](https://github.com/Ogogo/OgogoZfcUserPmFolders) - Put conversations into folders
-- [OgogoZfcUserPmSearch](https://github.com/Ogogo/OgogoZfcUserPmSearch) - Search for conversations
-- [OgogoZfcUserPmStar](https://github.com/Ogogo/OgogoZfcUserPmSearch) - Star important conversations
+ 
