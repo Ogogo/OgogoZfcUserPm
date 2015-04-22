@@ -1,0 +1,45 @@
+<main class="content no-shadow bpage withsidemenu">
+	<section class="icons-block margin-top margin-bottom-2x">
+		<div id="inner-wrap" class="container semibg">
+			<div class="row">
+
+
+				<?php
+
+$form = $this->form;
+$form->prepare();
+$form->setAttribute('action', $this->url('ogogo/zfc-user/pm/new-conversation'));
+$form->setAttribute('method', 'post');
+
+echo '<a href="' . $this->url('ogogo/zfc-user/pm/list') . '" class="btn btn-default"><span class="glyphicon glyphicon-arrow-left"></span> ' . $this->translate('Back to conversations') . '</a>';
+
+echo $this->form()->openTag($form);
+
+echo $this->formLabel($form->get('to'));
+echo $this->formRow($form->get('to'));
+echo $this->formRow($form->get('headline'));
+echo $this->formRow($form->get('message'));
+echo $this->formRow($form->get('csrf'));
+echo $this->formRow($form->get('submit'));
+echo $this->form()->closeTag();
+
+$this->headLink()->appendStylesheet("/js/select2-3.5.2/select2.css");
+$this->inlineScript()->appendFile("/js/select2-3.5.2/select2.min.js");
+
+?>
+<script>
+    var users = <?= json_encode($this->users) ?>;
+
+    $(document).ready(function($) {
+        $("input[name='to']").select2({
+            data: users,
+            multiple: true,
+            containerCss: {width:'200px'}
+        });
+    });
+</script>
+
+</div>
+</div>
+</section>
+</main>
